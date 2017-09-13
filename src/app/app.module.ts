@@ -27,7 +27,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      mode: 'md',
+      menuType: 'overlay'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -36,7 +39,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    ProjectsPage,
+    ProjectDetailPage
   ],
   providers: [
     StatusBar,

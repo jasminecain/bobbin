@@ -8,11 +8,83 @@
 
   <ion-navbar>
     <ion-title>Projects</ion-title>
+    <div float-right padding-right>
+      <ion-icon name="add-circle"></ion-icon>
+    </div>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+<ion-card>
+
+  <ion-item>
+    <h2>Project Title</h2>
+  </ion-item>
+
+  <img src="assets/images/hoops.jpg">
+
+  <ion-card-content>
+    <p>Embroidery project that does THIS and THAT. COOL.</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <!-- <div>12 Likes</div> -->
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="share"></ion-icon>
+        <!-- <div>4 Comments</div> -->
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        11h ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item>
+      <h2>Project Title</h2>
+    </ion-item>
+
+    <img src="assets/images/hoops.jpg">
+
+    <ion-card-content>
+      <p>Embroidery project that does THIS and THAT. COOL.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <!-- <div>12 Likes</div> -->
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="share"></ion-icon>
+          <!-- <div>4 Comments</div> -->
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
 
 </ion-content>
